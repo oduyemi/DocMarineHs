@@ -9,18 +9,88 @@ export interface Product {
   
   export const products: Product[] =  [
     {
-      id: "scope-stretcher",
-      name: "Scope Stretcher",
+      id: "manual_defibrillators",
+      name: "Manual Defibrillators",
       description:
-        "Durable medical stretcher designed for safe patient transport in emergency and clinical environments.",
-      image: "/images/scope.jpeg",
+        "Advanced manual defibrillator for precise cardiac rhythm management in clinical settings.",
+      image: "/images/manual_debrifilator.jpeg",
     },
     {
-      id: "auto-sterilizer",
-      name: "Full Automatic Sterilizing Machine",
+      id: "braces_support",
+      name: "Orthopaedic Braces and Support",
+       description:
+        "Comprehensive range of orthopedic braces and supports for injury prevention and rehabilitation.",
+      image: "/images/braces.jpeg",
+    },
+    {
+      id: "valve_mask",
+      name: "Bag-Valve-Mask Devices",
       description:
-        "Advanced automatic sterilization system ensuring maximum infection control for medical instruments.",
-      image: "/images/automatic-sterilizer.jpg",
+        "Essential manual resuscitation device for emergency ventilation and oxygen delivery.",
+      image: "/images/valve_mask.jpeg",
+    },
+    {
+      id: "ambulance_stretcher",
+      name: "Ambulance Stretcher",
+      description:
+        "Durable and ergonomic ambulance stretcher for efficient patient transport and care.",
+      image: "/images/ambulance_stretcher.jpeg",
+    },
+    {
+      id: "scoop-stretcher",
+      name: "Scoop Stretcher",
+      description:
+        "Durable and lightweight scoop stretcher for safe patient handling and transport.",
+      image: "/images/scoop_stretcher.jpeg",
+    },
+    {
+      id: "basket_stretcher",
+      name: "Basket Stretcher",
+      description:
+        "Robust basket stretcher designed for challenging rescue operations and patient evacuation.",
+      image: "/images/basket_stretcher.jpeg",
+    },
+    {
+      id: "pulse-oximeter",
+      name: "Pulse Oximeter",
+      description:
+        "Non-invasive device for measuring blood oxygen saturation and pulse rate.",
+      image: "/images/pulse_oximeter.jpeg",
+    },
+    {
+      id: "spine_board_with_head_immobilizer",
+      name: "Spine Board with Head Immobilizer",
+      description:
+        "Comprehensive spinal immobilization system with integrated head support for trauma care.",
+      image: "/images/immobiliser.jpeg",
+    },
+    {
+      id: "vacuum-mattress",
+      name: "Vacuum Mattress",
+      description:
+        "Specialized vacuum mattress for spinal immobilization and patient comfort during transport.",
+      image: "/images/vacuum_mattress.jpeg",
+    },
+    {
+      id: "mercury_sphygmomanometer",
+      name: "Mercury Sphygmomanometer",
+      description:
+        "Precision mercury sphygmomanometer for accurate blood pressure measurement in clinical settings.",
+      image: "/images/mercury.jpeg",
+    },
+    {
+      id: "portable_water_test_kit",
+      name: "Portable water test kit for free & total chlorine",
+      description:
+        "Compact and easy-to-use water testing kit for measuring free and total chlorine levels in various water sources.",
+      image: "/images/test_kit.jpeg",
+    },
+    {
+      id: "extrication_device",
+      name: "Extrication Device",
+      description:
+        "Specialized extrication device for safe and efficient patient removal from vehicles and confined spaces.",
+      image: "/images/extrication.jpeg",
     },
     {
       id: "autoclave",
@@ -30,18 +100,11 @@ export interface Product {
       image: "/images/autoclave.jpeg",
     },
     {
-      id: "portable-suction",
-      name: "Portable Suction Machine",
-      description:
-        "Compact and efficient suction device for emergency and field medical use.",
-      image: "/images/suction_machine.jpg",
-    },
-    {
-      id: "manual-suction",
+      id: "Suction Machine",
       name: "Manual Suction Machine",
       description:
         "Reliable hand-operated suction machine suitable for basic emergency procedures.",
-      image: "/images/manual_suction.jpg",
+      image: "/images/suction_machine.jpeg",
     },
     {
       id: "otoscope",
@@ -58,32 +121,17 @@ export interface Product {
       image: "/images/infrared_thermometer.jpeg",
     },
     {
-      id: "bp-monitor",
-      name: "Blood Pressure Monitor",
+      id: "pulse_oximeter",
+      name: "Pulse Oximeter",
       description:
-        "Accurate blood pressure monitoring device for clinical and home healthcare use.",
-      image: "/images/bp-monitor.jpg",
-    },
-    // {
-    //   id: "finger-splint",
-    //   name: "Finger Splint",
-    //   description:
-    //     "Orthopedic support designed to stabilize and protect finger injuries.",
-    //   image: "/images/finger-splint.jpg",
-    // },
-    {
-      id: "cervical-collar",
-      name: "Cervical Collar",
-      description:
-        "Neck support device used to immobilize the cervical spine during trauma care.",
-      image: "/images/cervical-collar.jpg",
+        "Non-invasive device for measuring blood oxygen saturation and pulse rate.",
+      image: "/images/pulse_oximeter.jpeg",
     },
     {
-      id: "spine-board",
-      name: "Spine Board",
-      description:
-        "Rigid board for spinal immobilization and safe patient transfer in emergencies.",
-      image: "/images/spine-board.jpg",
+      id: "neil_stretcher",
+      name: "Neil Robertson Stretcher",
+      description: "Specialized stretcher designed for safe and efficient patient transport in confined spaces.",
+    image: "/images/neil.jpeg",      
     },
     {
       id: "ecg",
@@ -97,21 +145,14 @@ export interface Product {
       name: "Automated External Defibrillator (AED)",
       description:
         "Life-saving device designed to deliver electrical shocks during sudden cardiac arrest.",
-      image: "/images/aed.jpg",
+      image: "/images/auto_debrifilator.jpeg",
     },
     {
-      id: "ambu-bag",
-      name: "Ambu Bag",
+      id: "grab-bag",
+      name: "Emmergency Grab Bag",
       description:
         "Manual resuscitator used to provide positive pressure ventilation to patients.",
-      image: "/images/grab_bag.jpg",
-    },
-    {
-      id: "pulse-oximeter",
-      name: "Pulse Oximeter",
-      description:
-        "Non-invasive device for measuring blood oxygen saturation and pulse rate.",
-      image: "/images/pulse_oximeter.jpeg",
+      image: "/images/grab_bag.jpeg",
     },
   ];
   

@@ -23,8 +23,8 @@ export const Intro = () => {
               <img
                 src="/images/logo/logo.png"
                 alt="DocMarine Health Services Logo"
-                width={100}
-                height={100}
+                width={120}
+                height={120}
                 className="object-contain p-2"
               />
             </div>

@@ -1,4 +1,9 @@
+import { AnimatePresence } from "framer-motion";
+import { useState } from "react";
+import { RequestDetailModal } from "./modal/RequestDetail";
+
 export const Footer = () => {
+  const [requestOpen, setRequestOpen] = useState(false);
   return (
     <footer className="relative bg-slate-950 text-slate-300 overflow-hidden">
       {/* Subtle background accents */}
@@ -40,7 +45,15 @@ export const Footer = () => {
             <ul className="mt-4 space-y-3 text-sm">
               <li className="hover:text-white transition">About Us</li>
               <li className="hover:text-white transition">Products</li>
-              <li className="hover:text-white transition">Request Information</li>
+              <li>
+                <button
+                  type="button"
+                  onClick={() => setRequestOpen(true)}
+                  className="hover:text-white transition text-left"
+                >
+                  Request Information
+                </button>
+              </li>
             </ul>
           </div>
 
@@ -71,6 +84,15 @@ export const Footer = () => {
           </p>
         </div>
       </div>
+
+      <AnimatePresence>
+          {requestOpen && (
+            <RequestDetailModal
+              onClose={() => setRequestOpen(false)}
+            />
+                   
+          )}
+        </AnimatePresence>
     </footer>
   );
 };
