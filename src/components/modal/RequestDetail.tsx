@@ -185,7 +185,7 @@ export const RequestDetailModal = ({
                   type="button"
                   variant="outline"
                   onClick={onClose}
-                  className="h-11 rounded-full border-white/20 text-white"
+                  className="h-11 rounded-full border-white/20 text-gray-500 hover:border-white/30"
                 >
                   Cancel
                 </Button>
