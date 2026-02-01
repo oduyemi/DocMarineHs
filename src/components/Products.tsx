@@ -1,55 +1,62 @@
-"use client";
-
 import { motion } from "framer-motion";
 import { products } from "../data/products";
 import { ProductCard } from "./ProductCard";
 
 export const Products = () => {
   return (
-    <section className="relative bg-slate-50 py-20 lg:py-28 px-6 overflow-hidden" id="products">
-      {/* Subtle background accents */}
-      <div className="absolute -top-32 -left-32 h-96 w-96 rounded-full bg-sky-100 blur-3xl" />
-      <div className="absolute -bottom-32 -right-32 h-96 w-96 rounded-full bg-sky-100 blur-3xl" />
+    <section
+      id="products"
+      className="
+        relative overflow-hidden
+        bg-gradient-to-b from-slate-50 via-white to-slate-50
+        py-24 lg:py-32 px-6
+      "
+    >
+      {/* Ambient background accents */}
+      <div className="pointer-events-none absolute -top-40 -left-40 h-[32rem] w-[32rem] rounded-full bg-sky-200/30 blur-3xl" />
+      <div className="pointer-events-none absolute -bottom-40 -right-40 h-[32rem] w-[32rem] rounded-full bg-cyan-200/30 blur-3xl" />
 
       <div className="relative max-w-7xl mx-auto">
         {/* Header */}
         <motion.div
-          initial={{ opacity: 0, y: 30 }}
+          initial={{ opacity: 0, y: 24 }}
           whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.7, ease: "easeOut" }}
+          transition={{ duration: 0.7, ease: [0.22, 1, 0.36, 1] }}
           viewport={{ once: true }}
-          className="mb-14 max-w-3xl"
+          className="mb-16 max-w-3xl"
         >
-          <p className="text-sm uppercase tracking-widest text-sky-600 font-semibold">
+          <p className="text-xs font-semibold uppercase tracking-[0.25em] text-sky-600">
             Our Products
           </p>
 
-          <h2 className="mt-4 text-3xl md:text-4xl font-extrabold text-slate-900">
+          <h2 className="mt-5 text-3xl md:text-4xl lg:text-5xl font-extrabold text-slate-900 leading-tight">
             Medical Equipment You Can
-            <span className="block text-sky-600 mt-2">
+            <span className="block mt-2 bg-gradient-to-r from-sky-600 to-cyan-500 bg-clip-text text-transparent">
               Rely On
             </span>
           </h2>
 
-          <p className="mt-6 text-lg text-slate-600 leading-relaxed">
-            A carefully curated range of medical and emergency equipment
-            engineered for reliability, safety, and professional healthcare
-            environments.
+          <p className="mt-7 text-lg text-slate-600 leading-relaxed">
+            A carefully curated range of certified medical and emergency
+            equipment designed for performance, safety, and professional
+            healthcare environments.
           </p>
 
-          {/* Accent divider */}
-          <div className="mt-8 h-px w-24 bg-gradient-to-r from-sky-500 to-transparent" />
+          {/* Accent */}
+          <div className="mt-10 h-px w-28 bg-gradient-to-r from-sky-500 to-transparent" />
         </motion.div>
 
         {/* Products Grid */}
         <motion.div
           initial="hidden"
           whileInView="show"
-          viewport={{ once: true }}
+          viewport={{ once: true, margin: "-80px" }}
           variants={{
             hidden: {},
             show: {
-              transition: { staggerChildren: 0.08 },
+              transition: {
+                staggerChildren: 0.1,
+              },
             },
           }}
           className="
@@ -63,10 +70,13 @@ export const Products = () => {
             <motion.div
               key={product.id}
               variants={{
-                hidden: { opacity: 0, y: 40 },
-                show: { opacity: 1, y: 0 },
+                hidden: { opacity: 0, y: 32, scale: 0.96 },
+                show: { opacity: 1, y: 0, scale: 1 },
               }}
-              transition={{ duration: 0.6, ease: "easeOut" }}
+              transition={{
+                duration: 0.55,
+                ease: [0.22, 1, 0.36, 1],
+              }}
             >
               <ProductCard product={product} />
             </motion.div>
