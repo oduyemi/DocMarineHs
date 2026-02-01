@@ -1,7 +1,10 @@
-import { motion } from "framer-motion";
+import { useState } from "react";
+import { RequestDetailModal } from "./modal/RequestDetail";
+import { motion, AnimatePresence } from "framer-motion";
 import { ShieldCheck, HeartPulse, Stethoscope } from "lucide-react";
 
 export const Intro = () => {
+  const [requestOpen, setRequestOpen] = useState(false);
   return (
     <section className="relative overflow-hidden bg-slate-950 text-white">
       {/* Background effects */}
@@ -62,7 +65,8 @@ export const Intro = () => {
             <div className="absolute -left-10 -top-6 h-32 w-72 rounded-full bg-sky-500/30 blur-3xl" />
 
             {/* Primary CTA */}
-            <motion.button
+            <motion.a
+              href="#products"
               whileHover={{ scale: 1.04 }}
               whileTap={{ scale: 0.98 }}
               className="
@@ -77,12 +81,13 @@ export const Intro = () => {
             >
               Explore Products
               <span className="absolute inset-0 rounded-xl ring-1 ring-white/20" />
-            </motion.button>
+            </motion.a>
 
             {/* Secondary CTA */}
             <motion.button
               whileHover={{ scale: 1.04 }}
               whileTap={{ scale: 0.98 }}
+              onClick={() => setRequestOpen(true)}
               className="
                 relative z-10 inline-flex items-center justify-center
                 px-10 py-6 rounded-xl font-semibold text-base
@@ -129,6 +134,15 @@ export const Intro = () => {
           />
         </motion.div>
       </div>
+
+      <AnimatePresence>
+          {requestOpen && (
+            <RequestDetailModal
+              onClose={() => setRequestOpen(false)}
+            />
+                   
+          )}
+        </AnimatePresence>
     </section>
   );
 };

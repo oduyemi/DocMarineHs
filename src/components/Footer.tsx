@@ -1,5 +1,5 @@
-import { AnimatePresence } from "framer-motion";
 import { useState } from "react";
+import { AnimatePresence } from "framer-motion";
 import { RequestDetailModal } from "./modal/RequestDetail";
 
 export const Footer = () => {
@@ -43,8 +43,21 @@ export const Footer = () => {
               Company
             </p>
             <ul className="mt-4 space-y-3 text-sm">
-              <li className="hover:text-white transition">About Us</li>
-              <li className="hover:text-white transition">Products</li>
+              <li>
+                <a 
+                  href="#about"
+                  className="hover:text-white transition text-left"
+                >
+                  About Us
+                </a>
+              </li>
+              <li>
+                <a 
+                  href="#products"
+                  className="hover:text-white transition text-left"
+                >Products
+                </a>
+              </li>
               <li>
                 <button
                   type="button"
