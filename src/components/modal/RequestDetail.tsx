@@ -5,7 +5,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 
-const FORMSPREE_ENDPOINT = "https://formspree.io/f/mqeladae";
+const FORMSPREE_ENDPOINT = "https://formspree.io/f/xojlkqew";
 
 export const RequestDetailModal = ({
   product,
