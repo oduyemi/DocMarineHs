@@ -22,7 +22,7 @@ export const Intro = () => {
         >
           {/* Logo & brand */}
           <div className="flex items-center gap-4 mb-10">
-            <div className="relative h-14 w-14 rounded-2xl bg-white/10 backdrop-blur border border-white/20 flex items-center justify-center">
+            {/* <div className="relative h-14 w-14 rounded-2xl bg-white/10 backdrop-blur border border-white/20 flex items-center justify-center">
               <img
                 src="/images/logo/logo.png"
                 alt="DocMarine Health Services Logo"
@@ -30,14 +30,36 @@ export const Intro = () => {
                 height={120}
                 className="object-contain p-2"
               />
+            </div> */}
+            <div className="relative">
+              {/* Outer glow */}
+              <div className="absolute -inset-4 rounded-[2rem] bg-sky-400/30 blur-2xl" />
+
+              {/* Logo card */}
+              <div className="relative h-24 w-24 rounded-3xl bg-gradient-to-br from-white via-sky-50 to-cyan-50 border border-sky-200 flex items-center justify-center shadow-[0_20px_60px_rgba(14,165,233,0.25)]">
+                <img
+                  src="/images/logo/logo.png"
+                  alt="DocMarine Health Services Logo"
+                  width={160}
+                  height={160}
+                  className="object-contain w-[100%] h-[100%]"
+                />
+              </div>
             </div>
-            <div>
-              <p className="text-xs uppercase tracking-widest text-sky-300">
+            <div> 
+              {/* <p className="text-xs uppercase tracking-widest text-sky-300">
                 Healthcare & Medical Equipment
               </p>
               <p className="font-semibold text-white">
                 DocMarine Health Services LTD
-              </p>
+              </p> */}
+              <p className="text-sm uppercase tracking-[0.25em] text-sky-300">
+  Healthcare & Medical Equipment
+</p>
+
+<p className="font-bold text-xl text-white">
+  DocMarine Health Services LTD
+</p>
             </div>
           </div>
 
