@@ -36,14 +36,12 @@ export const Intro = () => {
               <div className="absolute -inset-4 rounded-[2rem] bg-sky-400/30 blur-2xl" />
 
               {/* Logo card */}
-              <div className="relative h-35 w-35 rounded-3xl bg-gradient-to-br from-white via-sky-50 to-cyan-50 border border-sky-200 flex items-center justify-center shadow-[0_20px_60px_rgba(14,165,233,0.25)]">
-                <img
-                  src="/images/logo/logo.png"
-                  alt="DocMarine Health Services Logo"
-                  width={200}
-                  height={200}
-                  className="object-contain w-[100%] h-[100%]"
-                />
+              <div className="relative h-32 w-32 rounded-3xl bg-gradient-to-br from-white via-sky-50 to-cyan-50 border border-sky-200 flex items-center justify-center shadow-[0_20px_60px_rgba(14,165,233,0.25)]">
+              <img
+                src="/images/logo/logo.png"
+                alt="DocMarine Health Services Logo"
+                className="w-full h-full object-contain scale-150"
+              />
               </div>
             </div>
             <div> 
