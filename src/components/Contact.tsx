@@ -104,7 +104,7 @@ export const Contact = () => {
             <ContactItem
               icon={<MapPin className="h-5 w-5" />}
               title="Location"
-              value="6 Alhaji Olusesi Street, off Ibeh road Ire Akari estate, Isolo Lagos"
+              value="6 Alhaji Olusesi Street, off Ibeh road, Ire Akari estate, Isolo Lagos"
             />
           </div>
         </motion.div>
